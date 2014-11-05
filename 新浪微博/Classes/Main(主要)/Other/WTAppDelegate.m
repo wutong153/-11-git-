@@ -7,12 +7,27 @@
 //
 
 #import "WTAppDelegate.h"
+#import "WTTabBarController.h"
+
+
 
 @implementation WTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    // 显示状态栏
+    application.statusBarHidden = NO;
+    
+    // 1.创建窗口
+    self.window = [[UIWindow alloc]init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+    // 3.设置窗口的根控制器
+    self.window.rootViewController = [[WTTabBarController alloc]init];
+    
+    // 2.显示窗口
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							

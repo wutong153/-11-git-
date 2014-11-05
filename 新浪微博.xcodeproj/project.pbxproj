@@ -11,16 +11,19 @@
 		04B4C57B1A0A2FA10028A5FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B4C57A1A0A2FA10028A5FC /* CoreGraphics.framework */; };
 		04B4C57D1A0A2FA10028A5FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B4C57C1A0A2FA10028A5FC /* UIKit.framework */; };
 		04B4C5831A0A2FA10028A5FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04B4C5811A0A2FA10028A5FC /* InfoPlist.strings */; };
-		04B4C5851A0A2FA10028A5FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C5841A0A2FA10028A5FC /* main.m */; };
-		04B4C5891A0A2FA10028A5FC /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C5881A0A2FA10028A5FC /* WTAppDelegate.m */; };
-		04B4C58C1A0A2FA10028A5FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B4C58A1A0A2FA10028A5FC /* Main.storyboard */; };
-		04B4C58F1A0A2FA10028A5FC /* WTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C58E1A0A2FA10028A5FC /* WTViewController.m */; };
 		04B4C5911A0A2FA20028A5FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B4C5901A0A2FA20028A5FC /* Images.xcassets */; };
 		04B4C5981A0A2FA20028A5FC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B4C5971A0A2FA20028A5FC /* XCTest.framework */; };
 		04B4C5991A0A2FA20028A5FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B4C5781A0A2FA10028A5FC /* Foundation.framework */; };
 		04B4C59A1A0A2FA20028A5FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B4C57C1A0A2FA10028A5FC /* UIKit.framework */; };
 		04B4C5A21A0A2FA20028A5FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04B4C5A01A0A2FA20028A5FC /* InfoPlist.strings */; };
 		04B4C5A41A0A2FA20028A5FC /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C5A31A0A2FA20028A5FC /* ____Tests.m */; };
+		04B4C5C61A0A31A20028A5FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C5BB1A0A31A20028A5FC /* main.m */; };
+		04B4C5C71A0A31A20028A5FC /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C5BD1A0A31A20028A5FC /* WTAppDelegate.m */; };
+		04B4C5CA1A0A35A70028A5FC /* WTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C5C91A0A35A70028A5FC /* WTTabBarController.m */; };
+		04B4C5CD1A0A36DC0028A5FC /* WTDiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C5CC1A0A36DC0028A5FC /* WTDiscoverTableViewController.m */; };
+		04B4C5D01A0A36F60028A5FC /* WTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C5CF1A0A36F60028A5FC /* WTHomeViewController.m */; };
+		04B4C5D31A0A37100028A5FC /* WTMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C5D21A0A37100028A5FC /* WTMessageViewController.m */; };
+		04B4C5D61A0A37280028A5FC /* WTProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C5D51A0A37280028A5FC /* WTProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,19 +43,26 @@
 		04B4C57C1A0A2FA10028A5FC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		04B4C5801A0A2FA10028A5FC /* 新浪微博-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "新浪微博-Info.plist"; sourceTree = "<group>"; };
 		04B4C5821A0A2FA10028A5FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		04B4C5841A0A2FA10028A5FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04B4C5861A0A2FA10028A5FC /* 新浪微博-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "新浪微博-Prefix.pch"; sourceTree = "<group>"; };
-		04B4C5871A0A2FA10028A5FC /* WTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
-		04B4C5881A0A2FA10028A5FC /* WTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAppDelegate.m; sourceTree = "<group>"; };
-		04B4C58B1A0A2FA10028A5FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		04B4C58D1A0A2FA10028A5FC /* WTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTViewController.h; sourceTree = "<group>"; };
-		04B4C58E1A0A2FA10028A5FC /* WTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTViewController.m; sourceTree = "<group>"; };
 		04B4C5901A0A2FA20028A5FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		04B4C5961A0A2FA20028A5FC /* 新浪微博Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "新浪微博Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B4C5971A0A2FA20028A5FC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		04B4C59F1A0A2FA20028A5FC /* 新浪微博Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "新浪微博Tests-Info.plist"; sourceTree = "<group>"; };
 		04B4C5A11A0A2FA20028A5FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		04B4C5A31A0A2FA20028A5FC /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		04B4C5BB1A0A31A20028A5FC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04B4C5BC1A0A31A20028A5FC /* WTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
+		04B4C5BD1A0A31A20028A5FC /* WTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAppDelegate.m; sourceTree = "<group>"; };
+		04B4C5C81A0A35A70028A5FC /* WTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTTabBarController.h; sourceTree = "<group>"; };
+		04B4C5C91A0A35A70028A5FC /* WTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTTabBarController.m; sourceTree = "<group>"; };
+		04B4C5CB1A0A36DC0028A5FC /* WTDiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDiscoverTableViewController.h; sourceTree = "<group>"; };
+		04B4C5CC1A0A36DC0028A5FC /* WTDiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDiscoverTableViewController.m; sourceTree = "<group>"; };
+		04B4C5CE1A0A36F60028A5FC /* WTHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTHomeViewController.h; sourceTree = "<group>"; };
+		04B4C5CF1A0A36F60028A5FC /* WTHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTHomeViewController.m; sourceTree = "<group>"; };
+		04B4C5D11A0A37100028A5FC /* WTMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMessageViewController.h; sourceTree = "<group>"; };
+		04B4C5D21A0A37100028A5FC /* WTMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMessageViewController.m; sourceTree = "<group>"; };
+		04B4C5D41A0A37280028A5FC /* WTProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTProfileViewController.h; sourceTree = "<group>"; };
+		04B4C5D51A0A37280028A5FC /* WTProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +122,7 @@
 		04B4C57E1A0A2FA10028A5FC /* 新浪微博 */ = {
 			isa = PBXGroup;
 			children = (
-				04B4C5871A0A2FA10028A5FC /* WTAppDelegate.h */,
-				04B4C5881A0A2FA10028A5FC /* WTAppDelegate.m */,
-				04B4C58A1A0A2FA10028A5FC /* Main.storyboard */,
-				04B4C58D1A0A2FA10028A5FC /* WTViewController.h */,
-				04B4C58E1A0A2FA10028A5FC /* WTViewController.m */,
-				04B4C5901A0A2FA20028A5FC /* Images.xcassets */,
+				04B4C5AF1A0A31A20028A5FC /* Classes */,
 				04B4C57F1A0A2FA10028A5FC /* Supporting Files */,
 			);
 			path = "新浪微博";
@@ -126,9 +131,9 @@
 		04B4C57F1A0A2FA10028A5FC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04B4C5901A0A2FA20028A5FC /* Images.xcassets */,
 				04B4C5801A0A2FA10028A5FC /* 新浪微博-Info.plist */,
 				04B4C5811A0A2FA10028A5FC /* InfoPlist.strings */,
-				04B4C5841A0A2FA10028A5FC /* main.m */,
 				04B4C5861A0A2FA10028A5FC /* 新浪微博-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -150,6 +155,178 @@
 				04B4C5A01A0A2FA20028A5FC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04B4C5AF1A0A31A20028A5FC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04B4C5B01A0A31A20028A5FC /* Discover(广场) */,
+				04B4C5B41A0A31A20028A5FC /* Home(首页) */,
+				04B4C5B81A0A31A20028A5FC /* Main(主要) */,
+				04B4C5BE1A0A31A20028A5FC /* Message(消息) */,
+				04B4C5C21A0A31A20028A5FC /* Profile(我) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		04B4C5B01A0A31A20028A5FC /* Discover(广场) */ = {
+			isa = PBXGroup;
+			children = (
+				04B4C5B11A0A31A20028A5FC /* Controller */,
+				04B4C5B21A0A31A20028A5FC /* Model */,
+				04B4C5B31A0A31A20028A5FC /* View */,
+			);
+			path = "Discover(广场)";
+			sourceTree = "<group>";
+		};
+		04B4C5B11A0A31A20028A5FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B4C5CB1A0A36DC0028A5FC /* WTDiscoverTableViewController.h */,
+				04B4C5CC1A0A36DC0028A5FC /* WTDiscoverTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B4C5B21A0A31A20028A5FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04B4C5B31A0A31A20028A5FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04B4C5B41A0A31A20028A5FC /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				04B4C5B51A0A31A20028A5FC /* Controller */,
+				04B4C5B61A0A31A20028A5FC /* Model */,
+				04B4C5B71A0A31A20028A5FC /* View */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		04B4C5B51A0A31A20028A5FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B4C5CE1A0A36F60028A5FC /* WTHomeViewController.h */,
+				04B4C5CF1A0A36F60028A5FC /* WTHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B4C5B61A0A31A20028A5FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04B4C5B71A0A31A20028A5FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04B4C5B81A0A31A20028A5FC /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				04B4C5B91A0A31A20028A5FC /* Controller */,
+				04B4C5BA1A0A31A20028A5FC /* Other */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		04B4C5B91A0A31A20028A5FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B4C5C81A0A35A70028A5FC /* WTTabBarController.h */,
+				04B4C5C91A0A35A70028A5FC /* WTTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B4C5BA1A0A31A20028A5FC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				04B4C5BB1A0A31A20028A5FC /* main.m */,
+				04B4C5BC1A0A31A20028A5FC /* WTAppDelegate.h */,
+				04B4C5BD1A0A31A20028A5FC /* WTAppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		04B4C5BE1A0A31A20028A5FC /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				04B4C5BF1A0A31A20028A5FC /* Controller */,
+				04B4C5C01A0A31A20028A5FC /* Model */,
+				04B4C5C11A0A31A20028A5FC /* View */,
+			);
+			path = "Message(消息)";
+			sourceTree = "<group>";
+		};
+		04B4C5BF1A0A31A20028A5FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B4C5D11A0A37100028A5FC /* WTMessageViewController.h */,
+				04B4C5D21A0A37100028A5FC /* WTMessageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B4C5C01A0A31A20028A5FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04B4C5C11A0A31A20028A5FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04B4C5C21A0A31A20028A5FC /* Profile(我) */ = {
+			isa = PBXGroup;
+			children = (
+				04B4C5C31A0A31A20028A5FC /* Controller */,
+				04B4C5C41A0A31A20028A5FC /* Model */,
+				04B4C5C51A0A31A20028A5FC /* View */,
+			);
+			path = "Profile(我)";
+			sourceTree = "<group>";
+		};
+		04B4C5C31A0A31A20028A5FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04B4C5D41A0A37280028A5FC /* WTProfileViewController.h */,
+				04B4C5D51A0A37280028A5FC /* WTProfileViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B4C5C41A0A31A20028A5FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04B4C5C51A0A31A20028A5FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +408,6 @@
 			files = (
 				04B4C5911A0A2FA20028A5FC /* Images.xcassets in Resources */,
 				04B4C5831A0A2FA10028A5FC /* InfoPlist.strings in Resources */,
-				04B4C58C1A0A2FA10028A5FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +426,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B4C5851A0A2FA10028A5FC /* main.m in Sources */,
-				04B4C5891A0A2FA10028A5FC /* WTAppDelegate.m in Sources */,
-				04B4C58F1A0A2FA10028A5FC /* WTViewController.m in Sources */,
+				04B4C5CA1A0A35A70028A5FC /* WTTabBarController.m in Sources */,
+				04B4C5D31A0A37100028A5FC /* WTMessageViewController.m in Sources */,
+				04B4C5D61A0A37280028A5FC /* WTProfileViewController.m in Sources */,
+				04B4C5D01A0A36F60028A5FC /* WTHomeViewController.m in Sources */,
+				04B4C5C61A0A31A20028A5FC /* main.m in Sources */,
+				04B4C5C71A0A31A20028A5FC /* WTAppDelegate.m in Sources */,
+				04B4C5CD1A0A36DC0028A5FC /* WTDiscoverTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +461,6 @@
 				04B4C5821A0A2FA10028A5FC /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		04B4C58A1A0A2FA10028A5FC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04B4C58B1A0A2FA10028A5FC /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		04B4C5A01A0A2FA20028A5FC /* InfoPlist.strings */ = {
@@ -380,6 +552,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "新浪微博/新浪微博-Prefix.pch";
 				INFOPLIST_FILE = "新浪微博/新浪微博-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +566,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "新浪微博/新浪微博-Prefix.pch";
 				INFOPLIST_FILE = "新浪微博/新浪微博-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

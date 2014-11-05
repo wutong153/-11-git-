@@ -1,5 +1,5 @@
 //
-//  WTViewController.h
+//  WTTabBarController.h
 //  新浪微博
 //
 //  Created by Mac on 14-11-5.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WTViewController : UIViewController
+@interface WTTabBarController : UITabBarController
 
 @end
