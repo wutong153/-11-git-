@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049F749C1A0B272500F7FEEB /* UIImage+TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F749B1A0B272500F7FEEB /* UIImage+TW.m */; };
+		049F74A01A0B38BD00F7FEEB /* TWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F749F1A0B38BD00F7FEEB /* TWTabBar.m */; };
+		049F74A31A0B501A00F7FEEB /* UIView+TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F74A21A0B501A00F7FEEB /* UIView+TW.m */; };
 		04B4C5791A0A2FA10028A5FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B4C5781A0A2FA10028A5FC /* Foundation.framework */; };
 		04B4C57B1A0A2FA10028A5FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B4C57A1A0A2FA10028A5FC /* CoreGraphics.framework */; };
 		04B4C57D1A0A2FA10028A5FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B4C57C1A0A2FA10028A5FC /* UIKit.framework */; };
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		049F749A1A0B272500F7FEEB /* UIImage+TW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TW.h"; sourceTree = "<group>"; };
+		049F749B1A0B272500F7FEEB /* UIImage+TW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TW.m"; sourceTree = "<group>"; };
+		049F749E1A0B38BD00F7FEEB /* TWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTabBar.h; sourceTree = "<group>"; };
+		049F749F1A0B38BD00F7FEEB /* TWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTabBar.m; sourceTree = "<group>"; };
+		049F74A11A0B501A00F7FEEB /* UIView+TW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TW.h"; sourceTree = "<group>"; };
+		049F74A21A0B501A00F7FEEB /* UIView+TW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TW.m"; sourceTree = "<group>"; };
 		04B4C5751A0A2FA10028A5FC /* 新浪微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "新浪微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B4C5781A0A2FA10028A5FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04B4C57A1A0A2FA10028A5FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,6 +98,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		049F74991A0B26CF00F7FEEB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				049F749A1A0B272500F7FEEB /* UIImage+TW.h */,
+				049F749B1A0B272500F7FEEB /* UIImage+TW.m */,
+				049F74A11A0B501A00F7FEEB /* UIView+TW.h */,
+				049F74A21A0B501A00F7FEEB /* UIView+TW.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		049F749D1A0B385F00F7FEEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				049F749E1A0B38BD00F7FEEB /* TWTabBar.h */,
+				049F749F1A0B38BD00F7FEEB /* TWTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		04B4C56C1A0A2FA10028A5FC = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +267,8 @@
 		04B4C5B81A0A31A20028A5FC /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
+				049F749D1A0B385F00F7FEEB /* View */,
+				049F74991A0B26CF00F7FEEB /* Category */,
 				04B4C5B91A0A31A20028A5FC /* Controller */,
 				04B4C5BA1A0A31A20028A5FC /* Other */,
 			);
@@ -431,7 +462,10 @@
 				04B4C5D61A0A37280028A5FC /* WTProfileViewController.m in Sources */,
 				04B4C5D01A0A36F60028A5FC /* WTHomeViewController.m in Sources */,
 				04B4C5C61A0A31A20028A5FC /* main.m in Sources */,
+				049F74A01A0B38BD00F7FEEB /* TWTabBar.m in Sources */,
 				04B4C5C71A0A31A20028A5FC /* WTAppDelegate.m in Sources */,
+				049F74A31A0B501A00F7FEEB /* UIView+TW.m in Sources */,
+				049F749C1A0B272500F7FEEB /* UIImage+TW.m in Sources */,
 				04B4C5CD1A0A36DC0028A5FC /* WTDiscoverTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,6 +665,7 @@
 				04B4C5A91A0A2FA20028A5FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04B4C5AA1A0A2FA20028A5FC /* Build configuration list for PBXNativeTarget "新浪微博Tests" */ = {
 			isa = XCConfigurationList;
@@ -639,6 +674,7 @@
 				04B4C5AC1A0A2FA20028A5FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

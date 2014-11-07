@@ -2,7 +2,9 @@
 //  Prefix header
 //
 //  The contents of this file are implicitly included at the beginning of every source file.
-//
+
+
+// 新浪微博第二个视频
 
 #import <Availability.h>
 
@@ -13,6 +15,15 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+// 是否是ios7
+#define iOS7 ([UIDevice currentDevice].systemVersion.doubleValue >=7.0)
+
+// image 的分类
+#import "UIImage+TW.h"
+// UIView 的分类 使用x,y 宽高,中心点的时候方便点
+#import "UIView+TW.h"
+
 // 随机色
 #define WTRandomColor [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1]
 #endif
