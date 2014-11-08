@@ -27,6 +27,7 @@
 		04B4C5D01A0A36F60028A5FC /* WTHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C5CF1A0A36F60028A5FC /* WTHomeViewController.m */; };
 		04B4C5D31A0A37100028A5FC /* WTMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C5D21A0A37100028A5FC /* WTMessageViewController.m */; };
 		04B4C5D61A0A37280028A5FC /* WTProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C5D51A0A37280028A5FC /* WTProfileViewController.m */; };
+		04B890E91A0CD8DF0090B21E /* TWTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B890E81A0CD8DF0090B21E /* TWTabBarButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		04B4C5D21A0A37100028A5FC /* WTMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMessageViewController.m; sourceTree = "<group>"; };
 		04B4C5D41A0A37280028A5FC /* WTProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTProfileViewController.h; sourceTree = "<group>"; };
 		04B4C5D51A0A37280028A5FC /* WTProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTProfileViewController.m; sourceTree = "<group>"; };
+		04B890E71A0CD8DF0090B21E /* TWTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTabBarButton.h; sourceTree = "<group>"; };
+		04B890E81A0CD8DF0090B21E /* TWTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTabBarButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 			children = (
 				049F749E1A0B38BD00F7FEEB /* TWTabBar.h */,
 				049F749F1A0B38BD00F7FEEB /* TWTabBar.m */,
+				04B890E71A0CD8DF0090B21E /* TWTabBarButton.h */,
+				04B890E81A0CD8DF0090B21E /* TWTabBarButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -462,6 +467,7 @@
 				04B4C5D61A0A37280028A5FC /* WTProfileViewController.m in Sources */,
 				04B4C5D01A0A36F60028A5FC /* WTHomeViewController.m in Sources */,
 				04B4C5C61A0A31A20028A5FC /* main.m in Sources */,
+				04B890E91A0CD8DF0090B21E /* TWTabBarButton.m in Sources */,
 				049F74A01A0B38BD00F7FEEB /* TWTabBar.m in Sources */,
 				04B4C5C71A0A31A20028A5FC /* WTAppDelegate.m in Sources */,
 				049F74A31A0B501A00F7FEEB /* UIView+TW.m in Sources */,

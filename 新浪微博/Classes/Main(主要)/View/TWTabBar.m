@@ -7,11 +7,15 @@
 //
 
 #import "TWTabBar.h"
+#import "TWTabBarButton.h"
 
 @interface TWTabBar ()
 @property (nonatomic, weak)UIButton * plusButton;
 // 装选项卡按钮的数组
 @property (nonatomic, strong)NSMutableArray * tabBarButtons;
+
+// 选中的tabBarButton
+@property (nonatomic, weak)TWTabBarButton * selectedTabBarButton;
 @end
 
 @implementation TWTabBar
@@ -25,15 +29,33 @@
     return _tabBarButtons;
 }
 
+// 加号按钮的懒加载
+- (UIButton *)plusButton
+{// 小重构
+    if (!_plusButton) {
+        // 添加一个加号按钮(中间的加号按钮)
+        UIButton * plusButton = [[UIButton alloc]init];
+        
+        // 设置背景
+        [plusButton setBackgroundImage:[UIImage imageWithNamed:@"tabbar_compose_button"] forState:UIControlStateNormal];
+        // 设置图标
+        [plusButton setImage:[UIImage imageWithNamed:@"tabbar_compose_icon_add"] forState:UIControlStateNormal];
+        [plusButton setImage:[UIImage imageWithNamed:@"tabbar_compose_icon_add_highlighted"] forState:UIControlStateHighlighted];
+        
+        // 添加到view
+        [self addSubview:plusButton];
+        self.plusButton = plusButton;
+    }
+    return _plusButton;
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // 设置背景
         [self setupBg];
-        
-        // 增加一个加号按钮
-        [self setupPlusButton];
+
     }
     return self;
 }
@@ -50,28 +72,11 @@
         // 这个方法设置背景图片,可以将一个下图片平铺整个宽
         self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageWithNamed:@"tabbar_background"]];
     }
-    NSString * y  = @"sdd33";
+//    NSString * y  = @"sdd33"; 2014年11月07日11:00:21 实验
     
 }
 
-/**
- *  添加中间那个加号按钮
- */
-- (void)setupPlusButton
-{
-    // 添加一个加号按钮(中间的加号按钮)
-    UIButton * plusButton = [[UIButton alloc]init];
-    
-    // 设置背景
-    [plusButton setBackgroundImage:[UIImage imageWithNamed:@"tabbar_compose_button"] forState:UIControlStateNormal];
-    // 设置图标
-    [plusButton setImage:[UIImage imageWithNamed:@"tabbar_compose_icon_add"] forState:UIControlStateNormal];
-    [plusButton setImage:[UIImage imageWithNamed:@"tabbar_compose_icon_add_highlighted"] forState:UIControlStateHighlighted];
-    
-    // 添加到view
-    [self addSubview:plusButton];
-    self.plusButton = plusButton;
-}
+
 
 /**
  *  专门设置TWTabBar下面的子控件的 frame
@@ -92,18 +97,20 @@
  *  4个选项卡按钮的frame ============================================
  */
 - (void)setupTabBarButtonFrame
-{
+{// 2014年11月08日13:04:21 小重构
     int count = self.tabBarButtons.count;
+    CGFloat buttonW = self.width / (count + 1);
+    CGFloat buttonH = self.height;
     for (int i = 0; i < count; i++) {
         UIButton * button = self.tabBarButtons[i];
-        button.width = self.width / (count + 1);
-        button.height = self.height;
-        button.x = button.width * i;
+        button.width = buttonW;
+        button.height = buttonH;
+        button.x = buttonW * i;
         button.y = 0;
         
         // 因为中间有一个加号按钮, 所以右边的两个选项卡按钮的x就要多加一个按钮的宽度
         if (i >= count / 2) {
-            button.x += button.width;
+            button.x += buttonW;
         }
     }
 }
@@ -133,26 +140,40 @@
 // 选项卡按钮添加方法
 - (void)addTabBarButton:(UITabBarItem *)item
 {
-    UIButton * button = [[UIButton alloc]init];
-    
-    // 文字颜色
-    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    
-    // 文字
-    [button setTitle:item.title forState:UIControlStateNormal];
-    
-    // 图片
-    [button setImage:item.image forState:UIControlStateNormal];
-    
-    // 选中的图标
-    [button setImage:item.selectedImage forState:UIControlStateSelected];
+    TWTabBarButton * button = [[TWTabBarButton alloc]init];
+    button.item = item;
+    // 给每一个按钮添加一个方法
+    [button addTarget:self action:@selector(tabBarButtonClick:) forControlEvents:UIControlEventTouchDown];
+    // 设置每个按钮额tag
+    button.tag = self.tabBarButtons.count;
+   
     // 将按钮添加到 自己的肚皮上
     [self addSubview:button];
-    
     // 将填好数据的button添加到准备好的数组
     [self.tabBarButtons addObject:button];
+    
+    // 默认最前面的按钮选中
+    if (self.tabBarButtons.count == 1) {
+        [self tabBarButtonClick:button];
+    }
 }
 
+
+- (void)tabBarButtonClick:(TWTabBarButton *)tabBarButton
+{
+    // 总结我最开始还以为这两个方法是分开的,那个时候找不到to值怎么搞
+    // 原来代理方法自己不用实现,而是直接调用,哎
+    if ([self.delegate respondsToSelector:@selector(tabBar:didSelectButtonFrom:to:)]) {
+        int from = self.selectedTabBarButton.tag;
+        int to = tabBarButton.tag;
+        [self.delegate tabBar:self didSelectButtonFrom:from to:to];
+    }
+    
+    
+    self.selectedTabBarButton.selected = NO;
+    tabBarButton.selected = YES;
+    self.selectedTabBarButton = tabBarButton;
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.

@@ -13,7 +13,7 @@
 #import "WTProfileViewController.h"
 #import "WTDiscoverTableViewController.h"
 
-@interface WTTabBarController ()
+@interface WTTabBarController ()<TWTabBarDelegate>
 // TabbarController的自定义属性Tabbar
 @property (nonatomic, weak)TWTabBar * customTabBar;
 @end
@@ -35,33 +35,35 @@
     return self;
 }
 
+
+#pragma mark 自定义tabbar的懒加载
+- (TWTabBar *)customTabBar
+{// 2014年11月08日13:03:51 小重构
+    if (!_customTabBar) {
+        // 创建新的tabbar
+        TWTabBar * customTabBar = [[TWTabBar alloc]init];
+        customTabBar.frame = self.tabBar.frame;
+        
+        // 设置代理
+        customTabBar.delegate = self;
+        
+        [self.view addSubview:customTabBar];
+        self.customTabBar = customTabBar;
+        
+        // 移除原来的tabbar
+        [self.tabBar removeFromSuperview];
+    }
+    return _customTabBar;
+}
+
 #pragma mark view加载完毕
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    // 初始化tabbar
-    [self setupTabBar];
 }
 
-#pragma mark 初始化tabbar
-/**
- *  初始化tabbar ==================================================
- */
-- (void)setupTabBar
-{
-    // 创建新的tabbar
-    TWTabBar * customTabBar = [[TWTabBar alloc]init];
-    customTabBar.frame = self.tabBar.frame;
 
-    
-    [self.view addSubview:customTabBar];
-    self.customTabBar = customTabBar;
-    
-    // 移除原来的tabbar
-    [self.tabBar removeFromSuperview];
-}
 
 #pragma mark 初始化所有子控制器
 /**
@@ -122,5 +124,14 @@
 
 
 
-#pragma mark - 其他方法
+#pragma mark - 自定义tabbar的代理方法
+- (void)tabBar:(TWTabBar *)tabBar didSelectButtonFrom:(int)from to:(int)to
+{
+//    NSLog(@"从 %d 到 %d", from, to);
+//    NSLog(@"%@", self.view.subviews);
+    
+    //self.selectedIndex = to;
+    
+    self.selectedViewController = self.childViewControllers[to];
+}
 @end
