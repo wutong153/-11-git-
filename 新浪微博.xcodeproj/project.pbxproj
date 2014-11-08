@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043CC5131A0DF1450096BF19 /* TWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043CC5121A0DF1450096BF19 /* TWNavigationController.m */; };
 		049F749C1A0B272500F7FEEB /* UIImage+TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F749B1A0B272500F7FEEB /* UIImage+TW.m */; };
 		049F74A01A0B38BD00F7FEEB /* TWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F749F1A0B38BD00F7FEEB /* TWTabBar.m */; };
 		049F74A31A0B501A00F7FEEB /* UIView+TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F74A21A0B501A00F7FEEB /* UIView+TW.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		043CC5111A0DF1450096BF19 /* TWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNavigationController.h; sourceTree = "<group>"; };
+		043CC5121A0DF1450096BF19 /* TWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNavigationController.m; sourceTree = "<group>"; };
 		049F749A1A0B272500F7FEEB /* UIImage+TW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TW.h"; sourceTree = "<group>"; };
 		049F749B1A0B272500F7FEEB /* UIImage+TW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TW.m"; sourceTree = "<group>"; };
 		049F749E1A0B38BD00F7FEEB /* TWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTabBar.h; sourceTree = "<group>"; };
@@ -285,6 +288,8 @@
 			children = (
 				04B4C5C81A0A35A70028A5FC /* WTTabBarController.h */,
 				04B4C5C91A0A35A70028A5FC /* WTTabBarController.m */,
+				043CC5111A0DF1450096BF19 /* TWNavigationController.h */,
+				043CC5121A0DF1450096BF19 /* TWNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -468,6 +473,7 @@
 				04B4C5D01A0A36F60028A5FC /* WTHomeViewController.m in Sources */,
 				04B4C5C61A0A31A20028A5FC /* main.m in Sources */,
 				04B890E91A0CD8DF0090B21E /* TWTabBarButton.m in Sources */,
+				043CC5131A0DF1450096BF19 /* TWNavigationController.m in Sources */,
 				049F74A01A0B38BD00F7FEEB /* TWTabBar.m in Sources */,
 				04B4C5C71A0A31A20028A5FC /* WTAppDelegate.m in Sources */,
 				049F74A31A0B501A00F7FEEB /* UIView+TW.m in Sources */,

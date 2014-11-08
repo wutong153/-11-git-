@@ -53,8 +53,8 @@
 {
     _item = item;
     
-    // 文字颜色
-    [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    // 文字颜色  //ios7的时候是黑色  ios6的时候是白色 2014年11月08日16:45:10
+    [self setTitleColor:iOS7 ? [UIColor blackColor] :[UIColor whiteColor] forState:UIControlStateNormal];
     [self setTitleColor:[UIColor orangeColor] forState:UIControlStateSelected];
     // 文字内容
     [self setTitle:item.title forState:UIControlStateNormal];

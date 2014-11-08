@@ -10,6 +10,13 @@
 
 @interface UIImage (TW)
 
+/**
+ *  哥自己的
+ *
+ *  @param name <#name description#>
+ *
+ *  @return <#return value description#>
+ */
 + (UIImage *)imageWithNamed:(NSString *)name;
 
 @end

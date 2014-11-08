@@ -13,6 +13,8 @@
 #import "WTProfileViewController.h"
 #import "WTDiscoverTableViewController.h"
 
+#import "TWNavigationController.h"
+
 @interface WTTabBarController ()<TWTabBarDelegate>
 // TabbarController的自定义属性Tabbar
 @property (nonatomic, weak)TWTabBar * customTabBar;
@@ -103,9 +105,16 @@
 - (void)setupOneChildVC:(UIViewController *)child title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName
 {
     // 控制器的背景颜色
-    child.view.backgroundColor = WTRandomColor;
+    //child.view.backgroundColor = WTRandomColor;
+    
+    // 2014年11月08日14:39:58 这一句相当于下面两句, 同时把标题和tabBar的文字都设置了
+    child.title = title;
+    
     // 设置标题
-    child.tabBarItem.title = title;
+    //child.tabBarItem.title = title;
+    //child.navigationItem.title = title;
+    
+    
     // 设置图片
     child.tabBarItem.image = [UIImage imageWithNamed:imageName];
     
@@ -116,8 +125,15 @@
     
     // 设置选中状态图片
     child.tabBarItem.selectedImage = selectedImage;
+    
+    /**
+     2014年11月08日14:37:52
+     添加的Navigation 控制器
+     */
+    TWNavigationController * nav = [[TWNavigationController alloc]initWithRootViewController:child];
+    
     // 添加子控制器
-    [self addChildViewController:child];
+    [self addChildViewController:nav];
     [self.customTabBar addTabBarButton:child.tabBarItem];
 }
 
