@@ -31,4 +31,16 @@
     return image;
 }
 
+/**
+ *  设置背景拉升方法中间拉伸两边不变
+ */
++ (UIImage *)resizbleImage:(NSString *)name
+{
+    UIImage *image = [self imageWithNamed:name];
+    
+    CGFloat left = image.size.width * 0.5;
+    CGFloat top = image.size.height * 0.5;
+    
+    return [image stretchableImageWithLeftCapWidth:left topCapHeight:top];
+}
 @end

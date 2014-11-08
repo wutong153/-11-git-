@@ -18,5 +18,5 @@
  *  @return <#return value description#>
  */
 + (UIImage *)imageWithNamed:(NSString *)name;
-
++ (UIImage *)resizbleImage:(NSString *)name;
 @end
