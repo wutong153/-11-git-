@@ -33,6 +33,11 @@
 - (void)setting
 {
     NSLog(@"你在点设置按钮");
+    
+    UITableViewController * VCs = [[UITableViewController alloc]init];
+    VCs.title = @"设置控制器";
+    VCs.view.backgroundColor = [UIColor redColor];
+    [self.navigationController pushViewController:VCs animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

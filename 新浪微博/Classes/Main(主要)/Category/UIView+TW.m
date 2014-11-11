@@ -9,6 +9,18 @@
 #import "UIView+TW.h"
 
 @implementation UIView (TW)
+// size de
+- (void)setSize:(CGSize)size
+{
+    CGRect frame = self.frame;
+    frame.size = size;
+    self.frame = frame;
+}
+
+- (CGSize)size
+{
+    return self.frame.size;
+}
 // x, y 的set get方法 ==================================
 // x的-------------------------
 - (void)setX:(CGFloat)x

@@ -10,6 +10,8 @@
 		043CC5131A0DF1450096BF19 /* TWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043CC5121A0DF1450096BF19 /* TWNavigationController.m */; };
 		043CC5161A0E16EC0096BF19 /* TWSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 043CC5151A0E16EC0096BF19 /* TWSearchBar.m */; };
 		043CC55A1A0E88ED0096BF19 /* TWTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 043CC5591A0E88ED0096BF19 /* TWTitleButton.m */; };
+		043CC55D1A0E89830096BF19 /* TWTitleMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 043CC55C1A0E89830096BF19 /* TWTitleMenu.m */; };
+		043CC5601A0F2D530096BF19 /* UIBarButtonItem+TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 043CC55F1A0F2D530096BF19 /* UIBarButtonItem+TW.m */; };
 		049F749C1A0B272500F7FEEB /* UIImage+TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F749B1A0B272500F7FEEB /* UIImage+TW.m */; };
 		049F74A01A0B38BD00F7FEEB /* TWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F749F1A0B38BD00F7FEEB /* TWTabBar.m */; };
 		049F74A31A0B501A00F7FEEB /* UIView+TW.m in Sources */ = {isa = PBXBuildFile; fileRef = 049F74A21A0B501A00F7FEEB /* UIView+TW.m */; };
@@ -50,6 +52,10 @@
 		043CC5151A0E16EC0096BF19 /* TWSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSearchBar.m; sourceTree = "<group>"; };
 		043CC5581A0E88ED0096BF19 /* TWTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTitleButton.h; sourceTree = "<group>"; };
 		043CC5591A0E88ED0096BF19 /* TWTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTitleButton.m; sourceTree = "<group>"; };
+		043CC55B1A0E89830096BF19 /* TWTitleMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTitleMenu.h; sourceTree = "<group>"; };
+		043CC55C1A0E89830096BF19 /* TWTitleMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTitleMenu.m; sourceTree = "<group>"; };
+		043CC55E1A0F2D530096BF19 /* UIBarButtonItem+TW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+TW.h"; sourceTree = "<group>"; };
+		043CC55F1A0F2D530096BF19 /* UIBarButtonItem+TW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+TW.m"; sourceTree = "<group>"; };
 		049F749A1A0B272500F7FEEB /* UIImage+TW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TW.h"; sourceTree = "<group>"; };
 		049F749B1A0B272500F7FEEB /* UIImage+TW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TW.m"; sourceTree = "<group>"; };
 		049F749E1A0B38BD00F7FEEB /* TWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTabBar.h; sourceTree = "<group>"; };
@@ -117,6 +123,8 @@
 				049F749B1A0B272500F7FEEB /* UIImage+TW.m */,
 				049F74A11A0B501A00F7FEEB /* UIView+TW.h */,
 				049F74A21A0B501A00F7FEEB /* UIView+TW.m */,
+				043CC55E1A0F2D530096BF19 /* UIBarButtonItem+TW.h */,
+				043CC55F1A0F2D530096BF19 /* UIBarButtonItem+TW.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -278,6 +286,8 @@
 			children = (
 				043CC5581A0E88ED0096BF19 /* TWTitleButton.h */,
 				043CC5591A0E88ED0096BF19 /* TWTitleButton.m */,
+				043CC55B1A0E89830096BF19 /* TWTitleMenu.h */,
+				043CC55C1A0E89830096BF19 /* TWTitleMenu.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -480,8 +490,10 @@
 				04B4C5CA1A0A35A70028A5FC /* WTTabBarController.m in Sources */,
 				043CC55A1A0E88ED0096BF19 /* TWTitleButton.m in Sources */,
 				04B4C5D31A0A37100028A5FC /* WTMessageViewController.m in Sources */,
+				043CC5601A0F2D530096BF19 /* UIBarButtonItem+TW.m in Sources */,
 				04B4C5D61A0A37280028A5FC /* WTProfileViewController.m in Sources */,
 				04B4C5D01A0A36F60028A5FC /* WTHomeViewController.m in Sources */,
+				043CC55D1A0E89830096BF19 /* TWTitleMenu.m in Sources */,
 				04B4C5C61A0A31A20028A5FC /* main.m in Sources */,
 				04B890E91A0CD8DF0090B21E /* TWTabBarButton.m in Sources */,
 				043CC5131A0DF1450096BF19 /* TWNavigationController.m in Sources */,

@@ -66,7 +66,7 @@
 - (void)setupBg
 {
     if (iOS7) {
-        self.backgroundColor = [UIColor whiteColor];
+        //self.backgroundColor = [UIColor whiteColor];
     }else
     {
         // 这个方法设置背景图片,可以将一个下图片平铺整个宽

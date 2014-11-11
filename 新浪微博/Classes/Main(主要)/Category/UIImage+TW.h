@@ -19,4 +19,7 @@
  */
 + (UIImage *)imageWithNamed:(NSString *)name;
 + (UIImage *)resizbleImage:(NSString *)name;
+
+//
++ (UIImage *)resizbleImage:(NSString *)name leftRatio:(CGFloat)leftRatio toRatio:(CGFloat)toRatio;
 @end

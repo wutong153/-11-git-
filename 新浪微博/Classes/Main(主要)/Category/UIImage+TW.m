@@ -36,11 +36,18 @@
  */
 + (UIImage *)resizbleImage:(NSString *)name
 {
-    UIImage *image = [self imageWithNamed:name];
+    return [self resizbleImage:name leftRatio:0.5 toRatio:0.5];
+}
+
++ (UIImage *)resizbleImage:(NSString *)name leftRatio:(CGFloat)leftRatio toRatio:(CGFloat)toRatio
+{
+    UIImage * image = [self imageWithNamed:name];
+    CGFloat left = image.size.width * leftRatio;
+    CGFloat top = image.size.height * toRatio;
     
-    CGFloat left = image.size.width * 0.5;
-    CGFloat top = image.size.height * 0.5;
     
-    return [image stretchableImageWithLeftCapWidth:left topCapHeight:top];
+//    [image resizableImageWithCapInsets:<#(UIEdgeInsets)#>]
+    
+    return  [image stretchableImageWithLeftCapWidth:left topCapHeight:top];
 }
 @end

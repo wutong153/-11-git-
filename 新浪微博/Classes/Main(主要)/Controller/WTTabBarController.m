@@ -44,16 +44,16 @@
     if (!_customTabBar) {
         // 创建新的tabbar
         TWTabBar * customTabBar = [[TWTabBar alloc]init];
-        customTabBar.frame = self.tabBar.frame;
+        customTabBar.frame = self.tabBar.bounds;
         
         // 设置代理
         customTabBar.delegate = self;
         
-        [self.view addSubview:customTabBar];
+        [self.tabBar addSubview:customTabBar];
         self.customTabBar = customTabBar;
         
         // 移除原来的tabbar
-        [self.tabBar removeFromSuperview];
+        //[self.tabBar removeFromSuperview];
     }
     return _customTabBar;
 }
@@ -65,7 +65,16 @@
     // Do any additional setup after loading the view.
 }
 
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    // 移除系统自动产生的UITabBarButton
+    for (UIView * child in self.tabBar.subviews) {
+        if ([child isKindOfClass:[UIControl class]]) {
+            [child removeFromSuperview];
+        }
+    }
+}
 
 #pragma mark 初始化所有子控制器
 /**

@@ -1,9 +1,9 @@
 //
-//  TWTitleButton.h
-//  新浪微博
-//
-//  Created by Mac on 14-11-9.
-//  Copyright (c) 2014年 wutong. All rights reserved.
+/*
+ 
+    这个是标题按钮
+ 
+ */
 //
 
 #import <UIKit/UIKit.h>

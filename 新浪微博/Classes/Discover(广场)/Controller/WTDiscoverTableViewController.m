@@ -27,4 +27,9 @@
 }
 
 
+#pragma mark -- 代理
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    [self.navigationItem.titleView endEditing:YES];
+}
+
 @end

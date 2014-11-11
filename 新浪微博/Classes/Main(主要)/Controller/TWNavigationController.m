@@ -110,6 +110,31 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+//  重写控制器的push方法, 让非根控制器不显示tabbar
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if (self.viewControllers.count > 0) {// 如果push的不是根控制器(不是栈低控制器)
+        //  不显示tabbar
+        viewController.hidesBottomBarWhenPushed = YES;
+        //  设置左边的按钮
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"navigationbar_back" highImage:@"navigationbar_back_highlighted" target:self action:@selector(back)];
+        // 设置右边的按钮
+        viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:@"navigationbar_more" highImage:@"navigationbar_more_highlighted" target:self action:@selector(back)];
+    }
+    [super pushViewController:viewController animated:animated];
+}
+
+- (void)back
+{
+    [self popViewControllerAnimated:YES];
+}
+
+- (void)more
+{
+    [self popToRootViewControllerAnimated:YES];
+}
+
 /*
 #pragma mark - Navigation
 
